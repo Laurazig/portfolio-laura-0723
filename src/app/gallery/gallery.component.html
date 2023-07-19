@@ -4,6 +4,14 @@
     <input id="website-search" #search placeholder="Eg: Leipzig Wardrobe">
     
     <button (click)="searchWebsites(search.value)">Search</button>
-    <article *ngFor="let data of results"><p>{{data.name}}</p></article>
+
+    <article *ngFor="let data of results">
+        <p>{{data.name}}</p>
+        <p>{{data.url}}</p>
+        <p>{{data.description}}</p>
+        <p>{{data.photo}}</p>
+        <button (click)="selectWebsiteName(data)">View</button>
+
+    </article>
 
 </div>

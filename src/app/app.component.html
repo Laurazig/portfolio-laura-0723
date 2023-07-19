@@ -3,17 +3,39 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">#
 
-<div class="toolbar" role="banner">
+<div class="toolbar">
   <img src="../assets/favicon.png" alt="ginko leaf" id="toolbar-ginko">
   <h1>Laura Hesse</h1>
   <i class='fa fa-linkedin'></i>
 </div>
+
 <main>
-  <section>
-    <app-gallery [websiteList]="websiteDataList"></app-gallery>
+  <section id="photo-section">
+    <img src="../assets/BB.jpg" alt="biobites"id="biobites">
+    <img src="../assets/Hurricain.png" alt="Hurricain" id="Hurricain">
+    <img src="../assets/LW.png" alt="Leipzig Wardrobe" id="leipzig">
+  </section>
+
+  <div id="url">
+    <a href="https://biobites.vercel.app/" target="_blank">Biobites - DCI final group project</a>
+    <a href="https://lenganthanh.github.io/final_inspiration_jam/index.html" target="_blank">DCI Hackathon</a>
+   <a href="https://laurazig.github.io/leipzigWardrobe/" target="_blank">Leipzig Wardrobe - HTML community website</a>     
+  </div>
+  <section id="websiteList">
+    <!-- <app-gallery [websiteList]="websiteDataList">
+      (websiteSelectedEvent)="updateSelectedWebsite($event)">
+    </app-gallery> -->
     <img src="../assets/favicon.png" alt="ginko" id="background-ginko">
   </section>
 
-  
+  <article>
+    <ng-container *ngIf="selectedWebsite">
+      <img [src]="selectedWebsite?.photo">
+      <p>{{selectedWebsite?.name}}</p>
+      <p>{{selectedWebsite?.url}}</p>
+      <p>{{selectedWebsite?.description}}</p>
+    </ng-container>
+  </article>
+
   <router-outlet></router-outlet>
 </main>

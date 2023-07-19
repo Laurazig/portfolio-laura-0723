@@ -1,5 +1,4 @@
-
-.toolbar 
+.toolbar
     position: absolute
     top: 0
     left: 0
@@ -10,6 +9,8 @@
     background-color: #038d6f
     color: white
     font-weight: 600
+    width: 100%
+    margin-bottom: 1rem
 
     img
       height: 70%
@@ -19,23 +20,54 @@
     h1
       text-align: center
       font-family: 'Orbitron', sans-serif
-      // font-family: 'Tektur', cursive
-      // font-size: 2rem
       color: #a3eadb
       margin-left: 3rem
-    
-    fa fa-linkedin
+
+    // fa fa-linkedin
 
 
 main
-  img
-    width: 100%
-    opacity: 0.3
-    position: absolute
-    right: -10rem
-    bottom: -10rem
+  #photo-section
+    height: 5%
+    margin-top: 10%
+    display: flex
+    justify-content: space-evenly
 
+    img
+      width: 25%
+      border: 1px solid lightgray
+      opacity: 1
 
+  #url
+    display: flex
+    justify-content: space-between
+    margin: 1rem 5rem 0 5rem
+    a
+      curser: pointer
+      
+
+  #websiteList
+    #background-ginko
+      width: 100%
+      opacity: 0.3
+      position: absolute
+      right: -10rem
+      bottom: -10rem
 
 footer
     background-color: #0b5850
+
+
+@media screen and (max-width: 575px) 
+  main
+    #photo-section
+      display: inline-block
+      img
+        display: inline-block
+        width: 100%
+        margin: auto
+        border: 1px solid grey
+    #url
+      display: none
+    #background-ginko
+      display: none

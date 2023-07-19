@@ -13,21 +13,26 @@ export class AppComponent {
     {
       name: "Leipzig Wardrobe",
       photo: "../assets/LW.png",
-      URL: "https://laurazig.github.io/leipzigWardrobe/",
+      url: "https://laurazig.github.io/leipzigWardrobe/",
       description: "communtity app"
     },
     {
       name: "Biobites",
       photo: "../assets/BB.jpg",
-      URL: "https://biobites.vercel.app/",
+      url: "https://biobites.vercel.app/",
       description: "organic vegen version of Hello Fresh food boxes"      
     },
     {
       name: "Hurricane",
       photo: "../assets/Hurricain.png",
-      URL: "https://lenganthanh.github.io/final_inspiration_jam/index.html",
+      url: "https://lenganthanh.github.io/final_inspiration_jam/index.html",
       description: "DCI hackathon"
     }      
   ]
+
+  selectedWebsite: WebsiteData | undefined;
+  updateSelectedWebsite(data: WebsiteData) { 
+    this.selectedWebsite = data;
+  }
 
 }

@@ -1,6 +1,6 @@
 export interface WebsiteData {
     name: string,
     photo:string,
-    URL: string,
+    url: string,
     description: string
 }

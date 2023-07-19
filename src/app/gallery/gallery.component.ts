@@ -10,6 +10,7 @@ export class GalleryComponent implements OnInit {
 
   @Input() websiteList: WebsiteData[] = [];
   results: WebsiteData[] = [];
+  @Output() websiteSelectedEvent = new EventEmitter<WebsiteData>();
 
   constructor() { }
 
@@ -26,5 +27,9 @@ export class GalleryComponent implements OnInit {
           searchText.toLowerCase()
         )
     );
+  }
+
+  selectWebsiteName(name: WebsiteData) {
+    this.websiteSelectedEvent.emit(name);
   }
 }
