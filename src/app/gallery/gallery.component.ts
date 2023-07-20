@@ -29,7 +29,7 @@ export class GalleryComponent implements OnInit {
     );
   }
 
-  selectWebsiteName(name: WebsiteData) {
-    this.websiteSelectedEvent.emit(name);
+  selectWebsiteName(data: WebsiteData) {
+    this.websiteSelectedEvent.emit(data);
   }
 }
