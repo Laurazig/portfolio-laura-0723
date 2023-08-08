@@ -1,41 +1,80 @@
+*
+  padding: 0
+  margin: 0
+body, html
+  height: 100%
+  padding: 0
+  margin: none
+
 .toolbar
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    height: 60px
-    display: flex
-    align-items: center
-    background-color: #038d6f
-    color: white
-    font-weight: 600
-    width: 100%
-    margin-bottom: 1rem
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  height: 60px
+  display: flex
+  align-items: center
+  // background-color: #038d6f
+  background-color: black
+  font-weight: 600
+  width: 100%
+  margin-bottom: 1rem
 
-    img
-      height: 70%
-      margin-left: 10px
-      display: inline
+  img
+    height: 70%
+    margin-left: 10px
+    display: inline
 
-    h1
-      text-align: center
-      font-family: 'Orbitron', sans-serif
-      color: #a3eadb
-      margin-left: 3rem
+  h1
+    text-align: center
+    font-family: 'Orbitron', sans-serif
+    color: #366F33
+    margin-left: 3rem
 
     // fa fa-linkedin
 
-
 main
+  .hero-img
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/matrix.jpg")
+    // height: 100%
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    // position: relative
+    margin-top: 30px
+    padding: 200px
+  .hero-text
+    color: white
+    text-align: center
+    font-family: 'Orbitron', sans-serif
+
   #photo-section
     height: 5%
     margin-top: 10%
+    padding: 1rem
     display: flex
     justify-content: space-evenly
 
+    a
+      width: 30%
+      // border: 1px solid lightgray
+      position: relative
+
+      img
+        width: 100%
+        background-size: cover
+        transition: all .2s ease-in-out
+        display: block
+        height: auto
+      img:hover
+        transform: scale(1.02)
+      #Devhaus_Hackathon
+        width: auto
+        height: 13rem
+        margin: auto
+
     img
       width: 25%
-      border: 1px solid lightgray
       opacity: 1
 
   #url
@@ -44,21 +83,13 @@ main
     margin: 1rem 5rem 0 5rem
     a
       curser: pointer
-      
 
   #websiteList
-    #background-ginko
-      width: 100%
-      opacity: 0.3
-      position: absolute
-      right: -10rem
-      bottom: -10rem
-
+    margin-left: 3rem
 footer
-    background-color: #0b5850
+  background-color: #0b5850
 
-
-@media screen and (max-width: 575px) 
+@media screen and (max-width: 575px)
   main
     #photo-section
       display: inline-block

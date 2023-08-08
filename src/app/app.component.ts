@@ -14,19 +14,19 @@ export class AppComponent {
       name: "Leipzig Wardrobe",
       photo: "../assets/LW.png",
       url: "https://laurazig.github.io/leipzigWardrobe/",
-      description: "communtity app"
+      description: "Communtity app"
     },
     {
-      name: "Biobites",
-      photo: "../assets/BB.jpg",
-      url: "https://biobites.vercel.app/",
-      description: "organic vegen version of Hello Fresh food boxes"      
+      name: "Needles, Craft & Kultur",
+      photo: "../assets/NCK.png",
+      url: "https://needles-craft-kultur.vercel.app/",
+      description: "Grassi Museum community textile workshop"      
     },
     {
-      name: "Hurricane",
-      photo: "../assets/Hurricain.png",
-      url: "https://lenganthanh.github.io/final_inspiration_jam/index.html",
-      description: "DCI hackathon"
+      name: "Gatxs Helps Gatxs",
+      photo: "../assets/Gatxs.png",
+      url: "https://gatxs-laura.vercel.app/",
+      description: "Devhaus hackathon"
     }      
   ]
 
