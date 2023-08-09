@@ -20,7 +20,7 @@ export class AppComponent {
       name: "Needles, Craft & Kultur",
       photo: "../assets/NCK.png",
       url: "https://needles-craft-kultur.vercel.app/",
-      description: "Grassi Museum community textile workshop"      
+      description: "Grassi Museum community textile workshop. React.js, Next.js, Typescript, TailwindCSS."      
     },
     {
       name: "Gatxs Helps Gatxs",

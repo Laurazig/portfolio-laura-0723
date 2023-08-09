@@ -14,7 +14,6 @@ body, html
   height: 60px
   display: flex
   align-items: center
-  // background-color: #038d6f
   background-color: black
   font-weight: 600
   width: 100%
@@ -43,11 +42,16 @@ main
     // position: relative
     margin-top: 30px
     padding: 200px
-  .hero-text
-    color: white
-    text-align: center
-    font-family: 'Orbitron', sans-serif
-
+    .hero-text
+      // width: 20rem
+      // background-color: rgba(0, 0, 0, 0.262)
+      color: white
+      text-align: center
+      font-family: 'Orbitron', sans-serif
+      h2, p
+        padding: 0.5rem
+        background-color: rgba(0, 0, 0, 0.576)
+    
   #photo-section
     height: 5%
     margin-top: 10%
@@ -70,24 +74,19 @@ main
         transform: scale(1.02)
       #Devhaus_Hackathon
         width: auto
-        height: 13rem
+        height: 15rem
         margin: auto
-
-    img
-      width: 25%
-      opacity: 1
-
-  #url
-    display: flex
-    justify-content: space-between
-    margin: 1rem 5rem 0 5rem
-    a
-      curser: pointer
+      // img
+      //   width: 25%
+      //   opacity: 1
 
   #websiteList
-    margin-left: 3rem
+    margin: 0 20rem 5rem 3rem
+
 footer
-  background-color: #0b5850
+  height: 3rem
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/matrixFooter.jpg")
+  background-position: center bottom
 
 @media screen and (max-width: 575px)
   main
@@ -98,7 +97,3 @@ footer
         width: 100%
         margin: auto
         border: 1px solid grey
-    #url
-      display: none
-    #background-ginko
-      display: none
