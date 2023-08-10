@@ -1,10 +1,21 @@
 import { Component } from '@angular/core';
 import { WebsiteData } from './website-data';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.sass'],
+  animations: [
+    trigger
+  ]
 })
 export class AppComponent {
   title = 'portfolio-laura-0723';

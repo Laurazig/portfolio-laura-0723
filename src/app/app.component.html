@@ -15,9 +15,11 @@
       <p>I'm a full stack developer in Leipzig</p>
     </div>
   </div>
-  <!-- <div class="banner">
-    <img src="../assets/matrix.jpg" alt="matrix">
-  </div> -->
+  <section id="logos">
+    <app-logos></app-logos>
+                          
+          
+  </section>
   <section id="photo-section">
     <a href="https://needles-craft-kultur.vercel.app/" target="_blank">
       <img src="../assets/NCK.png" alt="Needles, Craft & Kultur" id="NCK">
@@ -33,16 +35,10 @@
     </a>
   </section>
 
-  <!-- <div id="url">
-    <a href="https://needles-craft-kultur.vercel.app/" target="_blank">Grassi Museum community textile workshop</a>
-    <a href="https://lenganthanh.github.io/final_inspiration_jam/index.html" target="_blank">DCI Hackathon</a>
-   <a href="https://laurazig.github.io/leipzigWardrobe/" target="_blank">Leipzig Wardrobe - HTML community website</a>     
-  </div> -->
   <section id="websiteList">
     <app-gallery [websiteList]="websiteDataList">
       (websiteSelectedEvent)="updateSelectedWebsite($event)">
     </app-gallery>
-    <!-- <img src="../assets/favicon.png" alt="ginko" id="background-ginko"> -->
   </section>
 
   <article>
@@ -60,7 +56,7 @@
 <footer>
   <a href="https://github.com/Laurazig" target="_blank"><img src="../assets/logo/githubIcon.jpg" alt="github icon">
   </a>
-  <a href="https://www.linkedin.com/in/laura-hesse-a998048a/" target="_blank"><img src="../assets/logo/linkedIn.jpg" alt="linked in icon">
+  <a href="https://www.linkedin.com/in/laura-hesse-a998048a/" target="_blank"><img src="../assets/logo/linkedIn.jpg"
+      alt="linked in icon">
   </a>
 </footer>
-  
