@@ -8,29 +8,54 @@ body, html
 
 .toolbar
   position: absolute
+  display: flex
+  justify-content: space-between
   top: 0
   left: 0
   right: 0
   height: 60px
-  display: flex
   align-items: center
   background-color: black
   font-weight: 600
   width: 100%
   margin-bottom: 1rem
 
-  img
-    height: 70%
-    margin-left: 10px
-    display: inline
+  // img
+  //   height: 70%
+  //   margin-left: 10px
+  //   display: inline
+  // i
+  //   color: #366F33
+  //   height: 70%
+  //   margin-left: 10px
+  //   display: inline
 
+  div
+    width: 4rem
+    height: 100%
+    // background-color: white
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 60px 60px 0 0
+    border-color: #366F33 transparent transparent transparent
+    // position: relative
+    // .devicon-github-original
+    //   padding-left: 10px
+    //   font-size: 30px
+    //   color: white  
+      // position: absolute
   h1
-    text-align: center
     font-family: 'Orbitron', sans-serif
     color: #366F33
-    margin-left: 3rem
 
     // fa fa-linkedin
+  a
+    
+    .devicon-github-original
+      padding-right: 3rem
+      font-size: 2rem
+      color: #366F33
 
 main
   .hero-img
@@ -50,7 +75,7 @@ main
       font-family: 'Orbitron', sans-serif
       h2, p
         padding: 0.5rem
-        background-color: rgba(0, 0, 0, 0.576)  
+        background-color: rgba(0, 0, 0, 0.576)
   #photo-section
     height: 5%
     margin-top: 10%
