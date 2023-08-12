@@ -1,10 +1,5 @@
-*
-  padding: 0
-  margin: 0
-body, html
-  height: 100%
-  padding: 0
-  margin: none
+// :root
+//   --green: #366F33
 
 .toolbar
   position: absolute
@@ -16,10 +11,9 @@ body, html
   height: 60px
   align-items: center
   background-color: black
-  font-weight: 600
-  width: 100%
-  margin-bottom: 1rem
+  // font-weight: 600
 
+  // navbar left logo
   // img
   //   height: 70%
   //   margin-left: 10px
@@ -30,10 +24,9 @@ body, html
   //   margin-left: 10px
   //   display: inline
 
-  div
+  #trangle
     width: 4rem
     height: 100%
-    // background-color: white
     width: 0
     height: 0
     border-style: solid
@@ -48,52 +41,51 @@ body, html
   h1
     font-family: 'Orbitron', sans-serif
     color: #366F33
-
+    font-size: larger
     // fa fa-linkedin
   a
-    
-    .devicon-github-original
-      padding-right: 3rem
+    #githubLogo
+      padding-right: 1rem
       font-size: 2rem
       color: #366F33
+      text-decoration: none
 
 main
   .hero-img
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/matrix.jpg")
-    // height: 100%
+    height: 100%
     background-position: center
     background-repeat: no-repeat
-    background-size: cover
     // position: relative
-    margin-top: 30px
-    padding: 200px
+    // margin-top: 30px
+    // padding: 200px
     .hero-text
+      padding: 5rem 0 3rem 0
       // width: 20rem
-      // background-color: rgba(0, 0, 0, 0.262)
       color: white
       text-align: center
       font-family: 'Orbitron', sans-serif
-      h2, p
-        padding: 0.5rem
+      h2
+        padding: 1rem 0 0.1rem 0
         background-color: rgba(0, 0, 0, 0.576)
-  #photo-section
-    height: 5%
-    margin-top: 10%
-    padding: 1rem
+      p
+        padding: 0 0 1rem 0
+        background-color: rgba(0, 0, 0, 0.576)
+  #logos
     display: flex
-    justify-content: space-evenly
-
+    justify-content: center
+  #photo-section
+    margin: auto
+    padding: 1rem
+    width: 70%
+    // margin-top: 1rem
+    // height: 5%
     a
-      width: 30%
-      // border: 1px solid lightgray
-      position: relative
-
       img
         width: 100%
-        background-size: cover
+        border: 1px solid #366F33
+        margin: 0.5rem 0
         transition: all .2s ease-in-out
-        display: block
-        height: auto
       img:hover
         transform: scale(1.02)
       #Devhaus_Hackathon
@@ -103,34 +95,25 @@ main
       // img
       //   width: 25%
       //   opacity: 1
-
   #websiteList
-    margin: 0 20rem 5rem 3rem
+    // margin: 0 2rem 1rem 1rem
 
-footer
-  height: 3rem
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/matrixFooter.jpg")
-  background-position: center bottom
-  display: flex
-  justify-content: center
-
-  a
-    height: 2rem
-    margin: 0 2rem
-    display: flex
-    justify-content: center
-
-    img
-      margin-top: 5px
-      height: 100%
-      filter: invert(1)
-
-@media screen and (max-width: 575px)
+@media screen and (min-width: 575px)
+  .toolbar
+    a
+    .devicon-github-original
+      padding-right: 3rem
   main
+    .hero-img
+      .hero-text
+        padding: 10rem
+        h2, p
     #photo-section
-      display: inline-block
-      img
-        display: inline-block
-        width: 100%
-        margin: auto
-        border: 1px solid grey
+      display: flex
+      a
+        align-self: center
+        margin: 0.5rem
+        img
+
+    #websiteList
+      // margin: 0 20rem 5rem 3rem

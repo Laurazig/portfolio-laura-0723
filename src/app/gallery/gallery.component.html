@@ -1,13 +1,15 @@
+<article *ngFor="let data of results">
+    <p>Search Results</p>
+    <p>{{data.name}}</p>
+    <!-- <a href={{data.url}}>URL:{{data.url}}</a> -->
+    <a href={{data.url}}>
+        <img src={{data.photo}} alt="screenshot website"></a>
+    <p>{{data.description}}</p>
+    <a href={{data.url}} target="_blank">
+        <button (click)="selectWebsiteName(data)">View</button></a>
+</article>
+
 <label for="website-search" id="searchBox">Search for a website eg. Leipzig wardrobe, Gatxs
 </label>
 <input id="website-search" #search placeholder="Eg: Needles">
-
 <button (click)="searchWebsites(search.value)">Search</button>
-
-<article *ngFor="let data of results">
-    <p>{{data.name}}</p>
-    <!-- <a href={{data.url}}>URL:{{data.url}}</a> -->
-    <a href={{data.url}}><img src={{data.photo}} alt="screenshot website"></a>
-    <p>{{data.description}}</p>
-    <a href={{data.url}} target="_blank"><button (click)="selectWebsiteName(data)">View</button></a>
-</article>

@@ -5,13 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { LogosComponent } from './logos/logos.component';
+import { BurgerComponent } from './burger/burger.component';
+import { FooterComponent } from './footer/footer.component';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     GalleryComponent,
-    LogosComponent
+    LogosComponent,
+    BurgerComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

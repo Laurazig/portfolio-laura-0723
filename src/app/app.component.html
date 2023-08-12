@@ -1,18 +1,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">#
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 
 <div class="toolbar">
   <!-- <img src="../assets/logo.png" alt="zeros and ones" id="toolbar-matrix"> -->
-  <div></div>
+  <!-- green triangle -->
+  <div id="trangle"></div>
   <!-- <div><i class="devicon-github-original"></i></div> -->
   <!-- <i class="devicon-github-original"></i> -->
   <h1>Laura Hesse</h1>
   <!-- <i class='fa fa-linkedin'></i> -->
-  <a href="https://github.com/Laurazig" target="_blank"><i class="devicon-github-original"></i></a>
-  
+  <!-- <app-burger></app-burger> -->
+  <a href="https://github.com/Laurazig" target="_blank">
+    <i class="devicon-github-original" id="githubLogo"></i>
+  </a>
 </div>
-
 <main>
   <div class="hero-img">
     <div class="hero-text">
@@ -22,12 +24,11 @@
   </div>
   <section id="logos">
     <app-logos></app-logos>
-                          
-          
   </section>
+  
   <section id="photo-section">
     <a href="https://needles-craft-kultur.vercel.app/" target="_blank">
-      <img src="../assets/NCK.png" alt="Needles, Craft & Kultur" id="NCK">
+      <img src="../assets/NCK.png" alt="Needles, Craft & Kultur" id="NCK"> 
       <!-- <div class="overlay">
         <div class="text">Next.js - Grassi Museum community textile workshop</div>
       </div> -->
@@ -58,10 +59,4 @@
 
   <router-outlet></router-outlet>
 </main>
-<footer>
-  <a href="https://github.com/Laurazig" target="_blank"><img src="../assets/logo/githubIcon.jpg" alt="github icon">
-  </a>
-  <a href="https://www.linkedin.com/in/laura-hesse-a998048a/" target="_blank"><img src="../assets/logo/linkedIn.jpg"
-      alt="linked in icon">
-  </a>
-</footer>
+<app-footer></app-footer>

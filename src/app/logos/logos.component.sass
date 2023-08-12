@@ -1,21 +1,32 @@
 #logos
-    display: grid
-    // column-gap: 50px
-    // grid-template-columns: 1fr 1fr 1fr 1fr
-    margin: 5rem
-    padding: 5rem
-    border: 1px solid #366F33
-    color: white
     display: flex
-    justify-content: space-between
-    i
-        font-size: 5rem
-        &:hover
-            scale: 1.05
-            transition: 0.2s 
+    // justify-content: space-between
+    // margin: auto
+    overflow: scroll
+    scrollbar-width: none //firefox
+    -ms-overflow-style: none //edge
+    margin: 1rem
+    padding: 0.5rem
+    border: 1px solid #366F33
+
+    #logos::-webkit-scrollbar //chrome
+        display: none
     img
-        height: 5rem
+        width: 4rem
+        margin: 0.3rem
+        // filter: grayscale(1)
         &:hover
             scale: 1.05
             transition: 0.2s
-            // background-color: #366F33
+    .logoGroupBlack
+        filter: invert(1)
+
+    @media screen and (min-width: 575px)
+        #logos
+            // max-width: 1400px
+            margin: 10rem 1rem 10rem 1rem
+            padding: 5rem
+
+            i, img
+                width: 5rem
+                margin: 0.3rem
