@@ -25,10 +25,10 @@
   <section id="logos">
     <app-logos></app-logos>
   </section>
-  
+
   <section id="photo-section">
     <a href="https://needles-craft-kultur.vercel.app/" target="_blank">
-      <img src="../assets/NCK.png" alt="Needles, Craft & Kultur" id="NCK"> 
+      <img src="../assets/NCK.png" alt="Needles, Craft & Kultur" id="NCK">
       <!-- <div class="overlay">
         <div class="text">Next.js - Grassi Museum community textile workshop</div>
       </div> -->
@@ -46,7 +46,7 @@
       (websiteSelectedEvent)="updateSelectedWebsite($event)">
     </app-gallery>
   </section>
-
+  <div id="spacer"></div>
   <article>
     <ng-container *ngIf="selectedWebsite">
       <img [src]="selectedWebsite.photo">
