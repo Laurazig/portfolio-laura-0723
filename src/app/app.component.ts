@@ -33,11 +33,17 @@ export class AppComponent {
       url: "https://needles-craft-kultur.vercel.app/",
       description: "Grassi Museum community textile workshop. React.js, Next.js, Typescript, TailwindCSS."      
     },
+    // {
+    //   name: "Gatxs Helps Gatxs",
+    //   photo: "../assets/Gatxs.png",
+    //   url: "https://gatxs-laura.vercel.app/",
+    //   description: "Devhaus hackathon"
+    // }      
     {
       name: "Gatxs Helps Gatxs",
-      photo: "../assets/Gatxs.png",
-      url: "https://gatxs-laura.vercel.app/",
-      description: "Devhaus hackathon"
+      photo: "../assets/Biobites.png",
+      url: "https://biobites-next.vercel.app/",
+      description: "Next.js version of DCI final MERN project"
     }      
   ]
 
